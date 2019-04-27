@@ -3,7 +3,7 @@
 
 html {
     color: #222;
-    font-size: 1em;
+    font-size: 12px;
     line-height: 1.4;
 }
 
@@ -77,19 +77,20 @@ textarea {
 
 
 html {
-  background-color: #fff;
+  background-color:	 #000033;
   height: 100%;
+  font-size: 1em;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 2em;
-  font-size: 1.25em;
+  /*font-size: 1.25em;*/
   height: 100%;
 }
 
 .wrapper {
-  font-weight: 700;
+  font-weight: 400;
   display: flex;
   justify-content: space-between;
 }
@@ -101,12 +102,13 @@ body {
   align-items: center;
   color: #fff;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
-  height: 300px;
+  border-left-style: solid;
+  border-width: thin;
+  padding-left: 1.5em;
+  padding-right: 0.5em;
+  /*font-size: 1.6em;*/
+  /*height: 300px;*/
 }
-
-
 
 
 /* ==========================================================================
@@ -188,6 +190,12 @@ body {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media screen and (min-width: 768px) {
+    p {
+        font-size: 1.5em;
+    }
+}
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
